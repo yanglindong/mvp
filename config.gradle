@@ -1,0 +1,26 @@
+ext {
+    isBuildApp=false;//false:作为Lib组件存在， true:作为application存在
+    android = [
+            compileSdkVersion: 26,
+            buildToolsVersion: "27.0.3",
+            minSdkVersion    : 16,
+            targetSdkVersion : 26,
+            versionCode :1,
+            versionName : '1.0',
+    ]
+
+    dependencies = [
+            appcompatV7 : 'com.android.support:appcompat-v7:26.0.0-alpha1',
+            design : 'com.android.support:design:26.0.0-alpha1',
+            supportV4 :'com.android.support:support-v4:26.0.0-alpha1',
+            gridlayoutV7: 'com.android.support:gridlayout-v7:26.0.0-alpha1',
+            gson: 'com.google.code.gson:gson:2.8.0',
+            rxjava2: 'io.reactivex.rxjava2:rxandroid:2.0.1',
+            chuck: 'com.readystatesoftware.chuck:library:1.0.4',
+            butterknife: 'com.jakewharton:butterknife:7.0.1',
+            imagepicker: 'com.lzy.widget:imagepicker:0.3.2',
+            okgo: 'com.lzy.net:okgo:3.0.4',
+            okrx2: 'com.lzy.net:okrx2:2.0.2',
+            okserver: 'com.lzy.net:okserver:2.0.5'
+    ]
+}
