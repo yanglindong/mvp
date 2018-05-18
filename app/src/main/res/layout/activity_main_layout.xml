@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_tab_layout"
+        app:tabIndicatorHeight="0dp"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+      />
+
+  <FrameLayout
+      android:id="@+id/id_fragment_content"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_above="@id/id_tab_layout"
+      />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/chuck_colorPrimary"
+        android:layout_below="@id/id_fragment_content"
+        />
+
+</RelativeLayout>
